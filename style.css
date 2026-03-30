@@ -1,101 +1,65 @@
-body {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    color: #333;
-    background-color: #f4f7f6;
+:root {
+    --main-pink: #f8d7da; /* 부드러운 핑크 */
+    --accent-pink: #d63384; /* 포인트가 되는 로즈 핑크 */
+    --bg-white: #fffafa; /* 아주 연한 핑크빛 화이트 */
+    --text-dark: #495057;
 }
 
-.container {
-    width: 85%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px 0;
+body {
+    font-family: 'Nanum Gothic', sans-serif; /* 동글동글한 기본 폰트 설정 */
+    background-color: var(--bg-white);
+    color: var(--text-dark);
 }
 
 header {
-    background: #1a1a1a;
-    color: #ffffff;
-    padding: 80px 0;
+    background: linear-gradient(135deg, var(--main-pink), #ffffff);
+    padding: 60px 0;
     text-align: center;
+    border-bottom: 3px solid var(--main-pink);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.8rem;
-    letter-spacing: -1px;
-}
-
-.repo-tag {
-    display: inline-block;
-    background: #e1e4e8;
-    color: #0366d6;
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-family: monospace;
-    margin-bottom: 15px;
-}
-
-#projects h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2.2rem;
-    color: #1a1a1a;
+    font-size: 2.5rem;
+    color: var(--accent-pink);
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .project-card {
-    background: #fff;
-    margin: 40px 0;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: white;
+    border-radius: 25px; /* 모서리를 둥글게 하여 부드러운 느낌 강조 */
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.1); /* 핑크빛 그림자 */
+    margin-bottom: 40px;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
+    gap: 20px;
 }
 
-.project-content {
-    flex: 1.2;
-    min-width: 300px;
+.role-box {
+    background-color: #fdf2f4;
+    border-left: 5px solid var(--accent-pink);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
 }
 
-.project-content h3 {
-    font-size: 1.8rem;
-    margin-top: 0;
+.demo-video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 4px solid var(--main-pink);
 }
 
 .btn {
-    display: inline-block;
-    background: #0366d6;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: var(--accent-pink);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px; /* 버튼을 동글동글하게 */
     text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    transition: transform 0.2s;
 }
 
 .btn:hover {
-    background: #024ea2;
-}
-
-.project-media {
-    flex: 1;
-    min-width: 300px;
-}
-
-.project-media img, .project-media video {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 50px;
-    background: #1a1a1a;
-    color: #888;
-    margin-top: 60px;
+    transform: scale(1.05);
 }
