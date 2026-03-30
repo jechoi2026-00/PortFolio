@@ -4,53 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>최정은 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Gaegu&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>최정은 님의 홈페이지에 오신 것을 환영합니다</h1>
-            <p>AI & Data Science Researcher</p>
+            <h1>최정은의 AI 이정 /</h1>
+            <p>Integrated M.S-Ph.D. Student | Medical Big Data & AI Researcher</p>
         </div>
     </header>
 
     <section id="projects">
         <div class="container">
-            <h2>Major Projects</h2>
+            <h2 class="section-title">Major Projects</h2>
             
             <div class="project-card">
                 <div class="project-content">
                     <h3>1. RareBridge</h3>
-                    <span class="repo-tag">human-team1/RareBridge</span>
-                    <p>인공지능 기술을 활용하여 미진단 희귀질환 환자의 임상 및 유전체 데이터를 재분석하는 프로젝트입니다. 진단되지 않은 희귀 질환의 원인을 규명하고 진단 효율을 높이는 데 중점을 두고 있습니다.</p>
-                    <a href="https://github.com/human-team1/RareBridge" target="_blank" class="btn">GitHub 방문하기</a>
-                </div>
-                <div class="project-media">
-                    <img src="images/rarebridge_main.jpg" alt="RareBridge Project Image" onerror="this.src='https://via.placeholder.com/400x250?text=RareBridge+Image'">
-                    <video controls>
-                        <source src="videos/rarebridge_demo.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <p>인공지능 기술을 활용하여 미진단 희귀질환 환자의 임상 및 유전체 데이터를 재분석하는 프로젝트입니다. 원인 규명 및 진단 효율 극대화를 목표로 합니다.</p>
+                    <a href="https://github.com/human-team1/RareBridge" target="_blank" class="btn">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-content">
-                    <h3>2. PPEGuard</h3>
-                    <span class="repo-tag">human-team1/PPEGuard</span>
-                    <p>AI 에이전트의 보안을 강화하기 위한 거버너(Governor) 아키텍처 연구입니다. Notion, Jira, GitHub와 같은 도구와 통합된 LLM 에이전트의 보안 취약점을 방어하고 안전한 워크플로우를 보장합니다.</p>
-                    <a href="https://github.com/human-team1/PPEGuard" target="_blank" class="btn">GitHub 방문하기</a>
+                    <h3>2. PPE Guard</h3>
+                    <span class="tag">지능형 산업 안전 장비 탐지 및 통합 관제 플랫폼</span>
+                    
+                    <div class="role-box">
+                        <h4>My Role</h4>
+                        <ul>
+                            <li><strong>DB 설계</strong>: 분석 세션 및 프레임 데이터 관리를 위한 아키텍처 구축</li>
+                            <li><strong>프론트엔드 기능 구현</strong>: PySide6 기반 데스크톱 클라이언트 및 UI 개발</li>
+                            <li><strong>Web 구동 진행</strong>: Flask API 연동 및 서비스 프로세스 최적화</li>
+                        </ul>
+                    </div>
+
+                    <p>웹캠 및 CCTV 영상을 실시간 분석하여 안전모, 조끼 등 안전 장구 미착용 상태를 탐지하고 관리자 모니터링을 지원하는 시스템입니다. 온프레미스 환경 설치를 지원합니다.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/human-team1/PPEGuard" target="_blank" class="btn">GitHub</a>
+                        <a href="https://drive.google.com/file/d/193AEWTDyeQAIOm80xJw-SZCwqEDAtQmJ/view?usp=sharing" target="_blank" class="btn secondary">발표자료(PDF) 보기</a>
+                    </div>
                 </div>
+
                 <div class="project-media">
-                    <img src="images/ppeguard_main.jpg" alt="PPEGuard Project Image" onerror="this.src='https://via.placeholder.com/400x250?text=PPEGuard+Image'">
+                    <video controls autoplay muted loop class="demo-video">
+                        <source src="Video Project.mp4" type="video/mp4">
+                        브라우저가 비디오를 지원하지 않습니다.
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Choi Jeong-eun. All rights reserved.</p>
+        <p>&copy; 2026 Choi Jeongeun. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
